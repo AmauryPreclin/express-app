@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+logs
+*.log
+coverage
+.nyc_output
+.eslintcache
+node_modules
+dist
+reports
