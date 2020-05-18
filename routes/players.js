@@ -23,7 +23,10 @@ router.use(requestTime);
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  res.header("Content-Type", "application/json");
+  res.set({
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  });
   //res.json(players);
   res.send(JSON.stringify(players, null, 4));
 });
